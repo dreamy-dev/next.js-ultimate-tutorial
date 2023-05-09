@@ -16,6 +16,9 @@ storyblokInit({
   accessToken: "W1vLyxT5rQ15jBpANjnv0gtt",
   use: [apiPlugin],
   components,
+  apiOptions: {
+    region: ''
+  }
 });
 
 function MyApp({ Component, pageProps }) {
