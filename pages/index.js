@@ -8,7 +8,10 @@ import {
 } from "@storyblok/react";
 
 export default function Home({ story }) {
-  story = useStoryblokState(story);
+  story = useStoryblokState(story,
+    {
+      customParent: 'https://app.storyblok.com'
+    });
 
   return (
     <div>
