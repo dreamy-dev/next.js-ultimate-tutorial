@@ -1,0 +1,27 @@
+.section-4 {
+  display: block;
+  width: 80%;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.heading-11 {
+  font-family: Raleway;
+}
+
+.heading-7 {
+  font-family: Raleway;
+  color: var(--darkGrey-00e7b287);
+  font-size: 24px;
+}
+
+.default-font {
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.paragraph-4 {
+  line-height: 24px;
+}

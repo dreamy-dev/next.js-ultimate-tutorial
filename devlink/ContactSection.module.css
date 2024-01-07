@@ -1,0 +1,140 @@
+.section {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f6f6f6;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section {
+    padding-bottom: 20px;
+    padding-left: 0px;
+  }
+}
+
+.section.centered {
+  text-align: center;
+}
+
+.section.accent {
+  background-color: var(--white-f8e92800);
+}
+
+.section.dark {
+  background-color: var(--darkGrey-00e7b287);
+  color: white;
+}
+
+.section.light {
+  background-color: var(--white-f8e92800);
+}
+
+.section-title-group {
+  display: block;
+  margin-bottom: 62px;
+  font-family: Lato, sans-serif;
+  color: #202020;
+}
+
+.section-title-group.centered {
+  text-align: center;
+}
+
+.section-heading {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: var(--darkerGrey-da0d8fdf);
+}
+
+.section-heading.centered {
+  margin-top: 50px;
+
+  font-family: Raleway;
+  color: var(--darkerGrey-da0d8fdf);
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .section-heading.centered {
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section-heading.centered {
+    line-height: 50px;
+  }
+}
+
+.section-subheading.center {
+  display: block;
+  width: 80%;
+  margin-right: auto;
+  margin-bottom: 90px;
+  margin-left: auto;
+
+  font-family: Raleway;
+  color: var(--darkerGrey-da0d8fdf);
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.link-7 {
+  display: block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0px;
+
+  font-family: Raleway;
+  color: var(--darkGrey-00e7b287);
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.heading-4 {
+  margin-top: 0px;
+  color: var(--darkGrey-00e7b287);
+  text-align: center;
+}
+
+.link-8 {
+  font-family: Raleway;
+  color: var(--darkGrey-00e7b287);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.text-block-4 {
+  font-family: Lato, sans-serif;
+  color: var(--darkerGrey-da0d8fdf);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text-block-4.text {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: Raleway;
+  color: var(--darkGrey-00e7b287);
+  text-align: center;
+}

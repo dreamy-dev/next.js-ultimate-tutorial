@@ -1,5 +1,7 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import * as _utils from "./utils";
+import _styles from "./Arbeitsraume.module.css";
 
 export function Arbeitsraume({ as: _Component = _Builtin.Section }) {
   return (
@@ -11,17 +13,23 @@ export function Arbeitsraume({ as: _Component = _Builtin.Section }) {
       id="arbeitsraume"
     >
       <_Builtin.Container tag="div">
-        <_Builtin.Block className="section-block" tag="div">
+        <_Builtin.Block
+          className={_utils.cx(_styles, "section-block")}
+          tag="div"
+        >
           <_Builtin.Row
-            className="columns"
+            className={_utils.cx(_styles, "columns")}
             tag="div"
             columns={{
               main: "6|6",
             }}
           >
-            <_Builtin.Column className="column-9" tag="div">
+            <_Builtin.Column
+              className={_utils.cx(_styles, "column-9")}
+              tag="div"
+            >
               <_Builtin.Image
-                className="image-8"
+                className={_utils.cx(_styles, "image-8")}
                 width="auto"
                 height="auto"
                 loading="auto"
@@ -30,14 +38,26 @@ export function Arbeitsraume({ as: _Component = _Builtin.Section }) {
               />
             </_Builtin.Column>
             <_Builtin.Column tag="div">
-              <_Builtin.Block className="div-block-13" tag="div">
-                <_Builtin.Heading className="white-titel" tag="h3">
+              <_Builtin.Block
+                className={_utils.cx(_styles, "div-block-13")}
+                tag="div"
+              >
+                <_Builtin.Heading
+                  className={_utils.cx(_styles, "white-titel")}
+                  tag="h3"
+                >
                   {"WOHLFÜHL"}
                 </_Builtin.Heading>
-                <_Builtin.Heading className="heading-12-white" tag="h1">
+                <_Builtin.Heading
+                  className={_utils.cx(_styles, "heading-12-white")}
+                  tag="h1"
+                >
                   {"ARBEITSRAUM"}
                 </_Builtin.Heading>
-                <_Builtin.Heading className="heading-9-copy" tag="h3">
+                <_Builtin.Heading
+                  className={_utils.cx(_styles, "heading-9-copy")}
+                  tag="h3"
+                >
                   {"Arbeitsraum zum Wohlfühlen: "}
                   <br />
                   {"ästhetisch, repräsentativ und praktisch"}

@@ -1,4 +1,5 @@
 import { storyblokEditable } from '@storyblok/react';
+import { Intro } from '../devlink';
 
 const Feature = ({ blok }) => (
   <div className="column feature" {...storyblokEditable(blok)}>

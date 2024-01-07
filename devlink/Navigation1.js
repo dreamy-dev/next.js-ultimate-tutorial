@@ -1,10 +1,12 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import * as _utils from "./utils";
+import _styles from "./Navigation1.module.css";
 
 export function Navigation1({ as: _Component = _Builtin.NavbarWrapper }) {
   return (
     <_Component
-      className="navigation-bar"
+      className={_utils.cx(_styles, "navigation-bar")}
       tag="div"
       data-collapse="small"
       data-animation="default"
@@ -22,22 +24,25 @@ export function Navigation1({ as: _Component = _Builtin.NavbarWrapper }) {
     >
       <_Builtin.NavbarContainer tag="div">
         <_Builtin.NavbarBrand
-          className="brand-link on-top"
+          className={_utils.cx(_styles, "brand-link", "on-top")}
           options={{
             href: "#",
           }}
         >
-          <_Builtin.Heading className="brand-text" tag="h1">
+          <_Builtin.Heading
+            className={_utils.cx(_styles, "brand-text")}
+            tag="h1"
+          >
             {"Acme Inc"}
           </_Builtin.Heading>
         </_Builtin.NavbarBrand>
         <_Builtin.NavbarMenu
-          className="navigation-menu on-bottom"
+          className={_utils.cx(_styles, "navigation-menu", "on-bottom")}
           tag="nav"
           role="navigation"
         >
           <_Builtin.NavbarLink
-            className="navigation-link"
+            className={_utils.cx(_styles, "navigation-link")}
             options={{
               href: "#",
             }}
@@ -45,7 +50,7 @@ export function Navigation1({ as: _Component = _Builtin.NavbarWrapper }) {
             {"Home"}
           </_Builtin.NavbarLink>
           <_Builtin.NavbarLink
-            className="navigation-link"
+            className={_utils.cx(_styles, "navigation-link")}
             options={{
               href: "#",
             }}
@@ -53,7 +58,7 @@ export function Navigation1({ as: _Component = _Builtin.NavbarWrapper }) {
             {"About"}
           </_Builtin.NavbarLink>
           <_Builtin.NavbarLink
-            className="navigation-link"
+            className={_utils.cx(_styles, "navigation-link")}
             options={{
               href: "#",
             }}
@@ -61,7 +66,10 @@ export function Navigation1({ as: _Component = _Builtin.NavbarWrapper }) {
             {"Contact"}
           </_Builtin.NavbarLink>
         </_Builtin.NavbarMenu>
-        <_Builtin.NavbarButton className="hamburger-button" tag="div">
+        <_Builtin.NavbarButton
+          className={_utils.cx(_styles, "hamburger-button")}
+          tag="div"
+        >
           <_Builtin.Icon
             widget={{
               type: "icon",

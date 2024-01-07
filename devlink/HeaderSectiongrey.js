@@ -1,10 +1,12 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import * as _utils from "./utils";
+import _styles from "./HeaderSectiongrey.module.css";
 
 export function HeaderSectiongrey({ as: _Component = _Builtin.Section }) {
   return (
     <_Component
-      className="header-section-grey"
+      className={_utils.cx(_styles, "header-section-grey")}
       grid={{
         type: "section",
       }}
@@ -12,16 +14,22 @@ export function HeaderSectiongrey({ as: _Component = _Builtin.Section }) {
       id="headersection-grey"
     >
       <_Builtin.Container tag="div">
-        <_Builtin.Block className="hero-block" tag="div">
+        <_Builtin.Block className={_utils.cx(_styles, "hero-block")} tag="div">
           <_Builtin.Row
-            className="columns-2"
+            className={_utils.cx(_styles, "columns-2")}
             tag="div"
             columns={{
               main: "7|5",
             }}
           >
-            <_Builtin.Column className="column-9" tag="div">
-              <_Builtin.Heading className="heading-12-copy" tag="h1">
+            <_Builtin.Column
+              className={_utils.cx(_styles, "column-9")}
+              tag="div"
+            >
+              <_Builtin.Heading
+                className={_utils.cx(_styles, "heading-12-copy")}
+                tag="h1"
+              >
                 {"FARB- UND"}
                 <br />
                 {"RAUMBERATUNG"}
@@ -29,7 +37,7 @@ export function HeaderSectiongrey({ as: _Component = _Builtin.Section }) {
             </_Builtin.Column>
             <_Builtin.Column tag="div">
               <_Builtin.Image
-                className="image-8"
+                className={_utils.cx(_styles, "image-8")}
                 width="430"
                 height="auto"
                 loading="auto"

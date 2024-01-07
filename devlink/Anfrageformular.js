@@ -1,29 +1,45 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import * as _utils from "./utils";
+import _styles from "./Anfrageformular.module.css";
 
 export function Anfrageformular({ as: _Component = _Builtin.Section }) {
   return (
     <_Component
-      className="section light"
+      className={_utils.cx(_styles, "section", "light")}
       grid={{
         type: "section",
       }}
       tag="div"
     >
-      <_Builtin.Container className="container-8" tag="div">
-        <_Builtin.Block className="section-title-group" tag="div">
-          <_Builtin.Heading className="heading h2" tag="h2">
+      <_Builtin.Container
+        className={_utils.cx(_styles, "container-8")}
+        tag="div"
+      >
+        <_Builtin.Block
+          className={_utils.cx(_styles, "section-title-group")}
+          tag="div"
+        >
+          <_Builtin.Heading
+            className={_utils.cx(_styles, "heading", "h2")}
+            tag="h2"
+          >
             {"Haben Sie Interesse?"}
           </_Builtin.Heading>
-          <_Builtin.Block className="paragraph-2" tag="div">
+          <_Builtin.Block
+            className={_utils.cx(_styles, "paragraph-2")}
+            tag="div"
+          >
             {
               "Füllen Sie das Kontaktformular aus, um eine unverbindliche Anfrage zu senden."
             }
           </_Builtin.Block>
         </_Builtin.Block>
-        <_Builtin.FormWrapper className="form-wrapper squeezed">
+        <_Builtin.FormWrapper
+          className={_utils.cx(_styles, "form-wrapper", "squeezed")}
+        >
           <_Builtin.FormForm
-            className="form"
+            className={_utils.cx(_styles, "form")}
             name="wf-form-Anfrage-Formular"
             data-name="Anfrage Formular"
             redirect="/anfrage-erhalten"
@@ -31,11 +47,14 @@ export function Anfrageformular({ as: _Component = _Builtin.Section }) {
             method="get"
             id="wf-form-Anfrage-Formular"
           >
-            <_Builtin.FormBlockLabel className="form-label" htmlFor="name-2">
+            <_Builtin.FormBlockLabel
+              className={_utils.cx(_styles, "form-label")}
+              htmlFor="name-2"
+            >
               {"Name:"}
             </_Builtin.FormBlockLabel>
             <_Builtin.FormTextInput
-              className="form-field"
+              className={_utils.cx(_styles, "form-field")}
               name="name-2"
               data-name="Name 2"
               type="text"
@@ -45,11 +64,14 @@ export function Anfrageformular({ as: _Component = _Builtin.Section }) {
               autoFocus={false}
               id="name-2"
             />
-            <_Builtin.FormBlockLabel className="form-label" htmlFor="email-2">
+            <_Builtin.FormBlockLabel
+              className={_utils.cx(_styles, "form-label")}
+              htmlFor="email-2"
+            >
               {"Firma:"}
             </_Builtin.FormBlockLabel>
             <_Builtin.FormTextInput
-              className="form-field"
+              className={_utils.cx(_styles, "form-field")}
               name="email-2"
               data-name="Email 2"
               type="text"
@@ -59,11 +81,14 @@ export function Anfrageformular({ as: _Component = _Builtin.Section }) {
               autoFocus={false}
               id="email-2"
             />
-            <_Builtin.FormBlockLabel className="form-label" htmlFor="email-3">
+            <_Builtin.FormBlockLabel
+              className={_utils.cx(_styles, "form-label")}
+              htmlFor="email-3"
+            >
               {"Adresse:"}
             </_Builtin.FormBlockLabel>
             <_Builtin.FormTextInput
-              className="form-field"
+              className={_utils.cx(_styles, "form-field")}
               name="email-2"
               data-name="Email 2"
               type="text"
@@ -73,11 +98,14 @@ export function Anfrageformular({ as: _Component = _Builtin.Section }) {
               autoFocus={false}
               id="email-2"
             />
-            <_Builtin.FormBlockLabel className="form-label" htmlFor="email-3">
+            <_Builtin.FormBlockLabel
+              className={_utils.cx(_styles, "form-label")}
+              htmlFor="email-3"
+            >
               {"E-Mail Adresse:"}
             </_Builtin.FormBlockLabel>
             <_Builtin.FormTextInput
-              className="form-field"
+              className={_utils.cx(_styles, "form-field")}
               name="email-2"
               data-name="Email 2"
               type="email"
@@ -87,11 +115,14 @@ export function Anfrageformular({ as: _Component = _Builtin.Section }) {
               autoFocus={false}
               id="email-2"
             />
-            <_Builtin.FormBlockLabel className="form-label" htmlFor="email-3">
+            <_Builtin.FormBlockLabel
+              className={_utils.cx(_styles, "form-label")}
+              htmlFor="email-3"
+            >
               {"Telefonnummer"}
             </_Builtin.FormBlockLabel>
             <_Builtin.FormTextInput
-              className="form-field"
+              className={_utils.cx(_styles, "form-field")}
               name="email-2"
               data-name="Email 2"
               type="tel"
@@ -101,11 +132,14 @@ export function Anfrageformular({ as: _Component = _Builtin.Section }) {
               autoFocus={false}
               id="email-2"
             />
-            <_Builtin.FormBlockLabel className="form-label" htmlFor="field-2">
+            <_Builtin.FormBlockLabel
+              className={_utils.cx(_styles, "form-label")}
+              htmlFor="field-2"
+            >
               {"Bemerkung:"}
             </_Builtin.FormBlockLabel>
             <_Builtin.FormTextarea
-              className="form-field text-area"
+              className={_utils.cx(_styles, "form-field", "text-area")}
               name="field-2"
               maxLength={5000}
               data-name="Field 2"
@@ -114,14 +148,18 @@ export function Anfrageformular({ as: _Component = _Builtin.Section }) {
               id="field-2"
             />
             <_Builtin.FormButton
-              className="button cta-dark"
+              className={_utils.cx(_styles, "button", "cta-dark")}
               type="submit"
               value="Anfrage absenden"
               data-wait="Vielen Dank!"
             />
           </_Builtin.FormForm>
-          <_Builtin.FormSuccessMessage className="success-wrapper">
-            <_Builtin.Paragraph className="success-message">
+          <_Builtin.FormSuccessMessage
+            className={_utils.cx(_styles, "success-wrapper")}
+          >
+            <_Builtin.Paragraph
+              className={_utils.cx(_styles, "success-message")}
+            >
               {
                 "Vielen Dank, wir haben Ihre Anfrage erhalten und werden uns in den nächsten Tagen bei Ihnen melden. "
               }
@@ -130,7 +168,7 @@ export function Anfrageformular({ as: _Component = _Builtin.Section }) {
               {"Möchten Sie noch mehr über FarbTraum erfahren?"}
             </_Builtin.Paragraph>
             <_Builtin.Link
-              className="link-3"
+              className={_utils.cx(_styles, "link-3")}
               button={true}
               block=""
               options={{
@@ -140,8 +178,10 @@ export function Anfrageformular({ as: _Component = _Builtin.Section }) {
               {"Mehr über Farbtraum erfahren"}
             </_Builtin.Link>
           </_Builtin.FormSuccessMessage>
-          <_Builtin.FormErrorMessage className="error-wrapper">
-            <_Builtin.Paragraph className="error-message">
+          <_Builtin.FormErrorMessage
+            className={_utils.cx(_styles, "error-wrapper")}
+          >
+            <_Builtin.Paragraph className={_utils.cx(_styles, "error-message")}>
               {
                 "Ups, etwas ist schief gegangen beim Absenden des Kontakformulars. Bitte überprüfen Sie IhreInformationen noch einmal oder setzen Sie sich direkt mit uns inKontakt unter "
               }
@@ -153,7 +193,7 @@ export function Anfrageformular({ as: _Component = _Builtin.Section }) {
                 }}
               >
                 <_Builtin.Span>
-                  <_Builtin.Strong className="bold-text">
+                  <_Builtin.Strong className={_utils.cx(_styles, "bold-text")}>
                     {"Kontakt"}
                   </_Builtin.Strong>
                 </_Builtin.Span>

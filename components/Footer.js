@@ -1,15 +1,20 @@
 /* import { storyblokEditable } from '@storyblok/react';
  */
-const Footer = ({ blok }) => {
+import { Footer } from '../devlink';
+
+const LayoutFooter = ({ blok }) => {
   return (
-    <h2
-      className="text-2xl mb-10 text-emerald-400"
-      /* {...storyblokEditable(blok)} */
-    >
-      {/* {blok.CopyrightText} */}
-      <p>Copyright © 2024 </p>
-    </h2>
+    <div>
+      <Footer props={blok} />
+      <h2
+        className="text-2xl mb-10 text-emerald-400"
+        /* {...storyblokEditable(blok)} */
+      >
+        {/* {blok.CopyrightText} */}
+        <p>Copyright © 2024 </p>
+      </h2>
+    </div>
   );
 };
 
-export default Footer;
+export default LayoutFooter;

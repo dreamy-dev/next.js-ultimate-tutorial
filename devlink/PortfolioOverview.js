@@ -1,10 +1,12 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import * as _utils from "./utils";
+import _styles from "./PortfolioOverview.module.css";
 
 export function PortfolioOverview({ as: _Component = _Builtin.Section }) {
   return (
     <_Component
-      className="section accent"
+      className={_utils.cx(_styles, "section", "accent")}
       grid={{
         type: "section",
       }}
@@ -12,12 +14,18 @@ export function PortfolioOverview({ as: _Component = _Builtin.Section }) {
       id="portfolio"
     >
       <_Builtin.Container tag="div">
-        <_Builtin.Block className="section-title-group" tag="div">
-          <_Builtin.Heading className="hero-heading" tag="h1">
+        <_Builtin.Block
+          className={_utils.cx(_styles, "section-title-group")}
+          tag="div"
+        >
+          <_Builtin.Heading
+            className={_utils.cx(_styles, "hero-heading")}
+            tag="h1"
+          >
             {"Portfolio"}
           </_Builtin.Heading>
           <_Builtin.Paragraph
-            className="paragraph-unten"
+            className={_utils.cx(_styles, "paragraph-unten")}
             vis={{
               medium: true,
             }}

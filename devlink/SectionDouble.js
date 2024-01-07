@@ -1,19 +1,21 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import * as _utils from "./utils";
+import _styles from "./SectionDouble.module.css";
 
 export function SectionDouble({ as: _Component = _Builtin.Row }) {
   return (
     <_Component
-      className="row-2"
+      className={_utils.cx(_styles, "row-2")}
       tag="div"
       columns={{
         main: "6|6",
         medium: "medium-stack",
       }}
     >
-      <_Builtin.Column className="column-5" tag="div">
+      <_Builtin.Column className={_utils.cx(_styles, "column-5")} tag="div">
         <_Builtin.Image
-          className="image-3"
+          className={_utils.cx(_styles, "image-3")}
           width="671"
           height="auto"
           loading="auto"
@@ -22,11 +24,11 @@ export function SectionDouble({ as: _Component = _Builtin.Row }) {
         />
       </_Builtin.Column>
       <_Builtin.Column tag="div">
-        <_Builtin.Heading className="heading" tag="h2">
+        <_Builtin.Heading className={_utils.cx(_styles, "heading")} tag="h2">
           {"Was ist Farbtraum?"}
         </_Builtin.Heading>
         <_Builtin.Paragraph
-          className="paragraph-left-aligned"
+          className={_utils.cx(_styles, "paragraph-left-aligned")}
           vis={{
             medium: true,
           }}
@@ -37,9 +39,11 @@ export function SectionDouble({ as: _Component = _Builtin.Row }) {
           <br />
           <br />
         </_Builtin.Paragraph>
-        <_Builtin.Paragraph className="paragraph-left-aligned">
+        <_Builtin.Paragraph
+          className={_utils.cx(_styles, "paragraph-left-aligned")}
+        >
           <_Builtin.Link
-            className="link-9"
+            className={_utils.cx(_styles, "link-9")}
             button={false}
             block=""
             options={{

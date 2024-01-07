@@ -1,19 +1,21 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import * as _utils from "./utils";
+import _styles from "./Sekton.module.css";
 
 export function Sekton({ as: _Component = _Builtin.Row }) {
   return (
     <_Component
-      className="row-2"
+      className={_utils.cx(_styles, "row-2")}
       tag="div"
       columns={{
         main: "6|6",
         medium: "medium-stack",
       }}
     >
-      <_Builtin.Column className="column-5" tag="div">
+      <_Builtin.Column className={_utils.cx(_styles, "column-5")} tag="div">
         <_Builtin.Image
-          className="image-3"
+          className={_utils.cx(_styles, "image-3")}
           width="671"
           height="auto"
           loading="auto"
@@ -22,13 +24,16 @@ export function Sekton({ as: _Component = _Builtin.Row }) {
         />
       </_Builtin.Column>
       <_Builtin.Column tag="div">
-        <_Builtin.Heading className="section-heading" tag="h2">
+        <_Builtin.Heading
+          className={_utils.cx(_styles, "section-heading")}
+          tag="h2"
+        >
           {"Ihr Zuhause soll ihr Lieblingsort sein: "}
           <br />
           {"stilvoll, harmonisch und funktional"}
         </_Builtin.Heading>
         <_Builtin.Paragraph
-          className="paragraph-left-aligned"
+          className={_utils.cx(_styles, "paragraph-left-aligned")}
           vis={{
             medium: true,
           }}
@@ -39,7 +44,7 @@ export function Sekton({ as: _Component = _Builtin.Row }) {
           <br />
         </_Builtin.Paragraph>
         <_Builtin.Paragraph
-          className="paragraph-left-aligned"
+          className={_utils.cx(_styles, "paragraph-left-aligned")}
           vis={{
             medium: true,
           }}

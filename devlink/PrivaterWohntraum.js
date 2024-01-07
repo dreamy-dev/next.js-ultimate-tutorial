@@ -1,5 +1,7 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import * as _utils from "./utils";
+import _styles from "./PrivaterWohntraum.module.css";
 
 export function PrivaterWohntraum({ as: _Component = _Builtin.Section }) {
   return (
@@ -10,23 +12,41 @@ export function PrivaterWohntraum({ as: _Component = _Builtin.Section }) {
       tag="section"
     >
       <_Builtin.Container tag="div">
-        <_Builtin.Block className="hero-block-wohnraum" tag="div">
+        <_Builtin.Block
+          className={_utils.cx(_styles, "hero-block-wohnraum")}
+          tag="div"
+        >
           <_Builtin.Row
-            className="columns"
+            className={_utils.cx(_styles, "columns")}
             tag="div"
             columns={{
               main: "6|6",
             }}
           >
-            <_Builtin.Column className="column-left" tag="div">
-              <_Builtin.Block className="div-block-14" tag="div">
-                <_Builtin.Heading className="white-titel" tag="h3">
+            <_Builtin.Column
+              className={_utils.cx(_styles, "column-left")}
+              tag="div"
+            >
+              <_Builtin.Block
+                className={_utils.cx(_styles, "div-block-14")}
+                tag="div"
+              >
+                <_Builtin.Heading
+                  className={_utils.cx(_styles, "white-titel")}
+                  tag="h3"
+                >
                   {"PRIVATER"}
                 </_Builtin.Heading>
-                <_Builtin.Heading className="heading-12-white" tag="h1">
+                <_Builtin.Heading
+                  className={_utils.cx(_styles, "heading-12-white")}
+                  tag="h1"
+                >
                   {"WOHNTRAUM"}
                 </_Builtin.Heading>
-                <_Builtin.Heading className="heading-9-copy" tag="h3">
+                <_Builtin.Heading
+                  className={_utils.cx(_styles, "heading-9-copy")}
+                  tag="h3"
+                >
                   {"Ihr Zuhause soll Ihr Lieblingsort sein: "}
                   <br />
                   {"stilvoll, harmonisch und funktional"}
@@ -35,7 +55,7 @@ export function PrivaterWohntraum({ as: _Component = _Builtin.Section }) {
             </_Builtin.Column>
             <_Builtin.Column tag="div">
               <_Builtin.Image
-                className="image-8"
+                className={_utils.cx(_styles, "image-8")}
                 width="auto"
                 height="auto"
                 loading="auto"

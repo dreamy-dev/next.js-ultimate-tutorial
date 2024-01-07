@@ -1,10 +1,12 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import * as _utils from "./utils";
+import _styles from "./Footer.module.css";
 
 export function Footer({ as: _Component = _Builtin.Section }) {
   return (
     <_Component
-      className="footer accent"
+      className={_utils.cx(_styles, "footer", "accent")}
       grid={{
         type: "section",
       }}
@@ -12,16 +14,16 @@ export function Footer({ as: _Component = _Builtin.Section }) {
     >
       <_Builtin.Container tag="div">
         <_Builtin.Image
-          className="image-6"
+          className={_utils.cx(_styles, "image-6")}
           width="201"
           height="auto"
           loading="auto"
           alt=""
           src="https://uploads-ssl.webflow.com/5b43b13e3096f498cad89320/5bb124b8c110e406f480283f_Element%201.png"
         />
-        <_Builtin.Block className="float-right" tag="div">
+        <_Builtin.Block className={_utils.cx(_styles, "float-right")} tag="div">
           <_Builtin.Link
-            className="social-icon-link"
+            className={_utils.cx(_styles, "social-icon-link")}
             button={false}
             block="inline"
             options={{
@@ -43,7 +45,7 @@ export function Footer({ as: _Component = _Builtin.Section }) {
             />
           </_Builtin.Link>
           <_Builtin.Link
-            className="social-icon-link"
+            className={_utils.cx(_styles, "social-icon-link")}
             button={false}
             block="inline"
             options={{
@@ -51,7 +53,7 @@ export function Footer({ as: _Component = _Builtin.Section }) {
             }}
           />
           <_Builtin.Link
-            className="social-icon-link"
+            className={_utils.cx(_styles, "social-icon-link")}
             button={false}
             block="inline"
             options={{
@@ -73,12 +75,18 @@ export function Footer({ as: _Component = _Builtin.Section }) {
             />
           </_Builtin.Link>
         </_Builtin.Block>
-        <_Builtin.Block className="div-block-5" tag="div" />
-        <_Builtin.Block className="div-block-6" tag="div">
+        <_Builtin.Block
+          className={_utils.cx(_styles, "div-block-5")}
+          tag="div"
+        />
+        <_Builtin.Block className={_utils.cx(_styles, "div-block-6")} tag="div">
           <_Builtin.HtmlEmbed value="%3Cp%3E%20%C2%A9%0A%3Cscript%20type%3D%22text%2FJavaScript%22%3E%0Adocument.write(new%20Date().getFullYear())%3B%0A%3C%2Fscript%3E%0AFarbtraum.ch%20%3C%2Fp%3E" />
-          <_Builtin.Block className="div-block-7" tag="div">
+          <_Builtin.Block
+            className={_utils.cx(_styles, "div-block-7")}
+            tag="div"
+          >
             <_Builtin.Link
-              className="link-5"
+              className={_utils.cx(_styles, "link-5")}
               button={false}
               block=""
               options={{
@@ -88,7 +96,7 @@ export function Footer({ as: _Component = _Builtin.Section }) {
               {"Kontakt"}
             </_Builtin.Link>
             <_Builtin.Link
-              className="link-5"
+              className={_utils.cx(_styles, "link-5")}
               button={false}
               block=""
               options={{

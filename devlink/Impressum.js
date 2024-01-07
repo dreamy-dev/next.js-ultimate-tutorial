@@ -1,23 +1,25 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import * as _utils from "./utils";
+import _styles from "./Impressum.module.css";
 
 export function Impressum({ as: _Component = _Builtin.Section }) {
   return (
     <_Component
-      className="section-4"
+      className={_utils.cx(_styles, "section-4")}
       grid={{
         type: "section",
       }}
       tag="div"
     >
       <_Builtin.Container tag="div">
-        <_Builtin.Heading className="heading-11" tag="h1">
+        <_Builtin.Heading className={_utils.cx(_styles, "heading-11")} tag="h1">
           {"Impressum"}
         </_Builtin.Heading>
-        <_Builtin.Heading className="heading-7" tag="h3">
+        <_Builtin.Heading className={_utils.cx(_styles, "heading-7")} tag="h3">
           {"Kontaktadresse"}
         </_Builtin.Heading>
-        <_Builtin.Paragraph className="default-font">
+        <_Builtin.Paragraph className={_utils.cx(_styles, "default-font")}>
           {"FarbTraum   "}
           <br />
           {"HeidiSorg   "}
@@ -32,19 +34,19 @@ export function Impressum({ as: _Component = _Builtin.Section }) {
           <br />
           <br />
         </_Builtin.Paragraph>
-        <_Builtin.Heading className="heading-7" tag="h3">
+        <_Builtin.Heading className={_utils.cx(_styles, "heading-7")} tag="h3">
           {"Handelregistereintrag"}
         </_Builtin.Heading>
-        <_Builtin.Paragraph className="default-font">
+        <_Builtin.Paragraph className={_utils.cx(_styles, "default-font")}>
           {"Eingetragener Firmenname: farbTRaum, Heidi Sorg            "}
           <br />
           {"Nummer: CHE‑173.800.416"}
           <br />
         </_Builtin.Paragraph>
-        <_Builtin.Heading className="heading-7" tag="h3">
+        <_Builtin.Heading className={_utils.cx(_styles, "heading-7")} tag="h3">
           {"Haftungsauschschluss"}
         </_Builtin.Heading>
-        <_Builtin.Paragraph className="default-font">
+        <_Builtin.Paragraph className={_utils.cx(_styles, "default-font")}>
           {
             "Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen.            "
           }
@@ -58,20 +60,22 @@ export function Impressum({ as: _Component = _Builtin.Section }) {
           }
           <br />
         </_Builtin.Paragraph>
-        <_Builtin.Heading className="heading-7" tag="h3">
+        <_Builtin.Heading className={_utils.cx(_styles, "heading-7")} tag="h3">
           {"Urheberrechte"}
         </_Builtin.Heading>
-        <_Builtin.Paragraph className="default-font">
+        <_Builtin.Paragraph className={_utils.cx(_styles, "default-font")}>
           {
             "Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören ausschliesslich der Firma FarbTraum oder den speziell genannten Rechtsinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung der Urheberrechtsträger im Voraus einzuholen.                  "
           }
           <br />
           <br />
         </_Builtin.Paragraph>
-        <_Builtin.Heading className="heading-7" tag="h3">
+        <_Builtin.Heading className={_utils.cx(_styles, "heading-7")} tag="h3">
           {"Webdesign & Entwicklung"}
         </_Builtin.Heading>
-        <_Builtin.Paragraph className="paragraph-4 default-font">
+        <_Builtin.Paragraph
+          className={_utils.cx(_styles, "paragraph-4", "default-font")}
+        >
           {"Der Webauftritt wurde von BeThriven aufgesetzt."}
           <br />
           <_Builtin.Strong>
