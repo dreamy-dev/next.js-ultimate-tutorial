@@ -5,14 +5,35 @@ import Grid from '../components/Grid';
 import Page from '../components/Page';
 import Teaser from '../components/Teaser';
 import LayoutFooter from '../components/Footer';
-import { Intro } from '../devlink';
+import {
+  Anfrageformular,
+  ContactSection,
+  CtaSection,
+  HeroHome,
+  Impressum,
+  Intro,
+  PortfolioOverview,
+  PortfolioTeaser,
+  Portrait,
+  PortraitHero,
+} from '../devlink';
 
 const components = {
+  homehero: HeroHome,
+  Intro: Intro,
+  portfolioteaser: PortfolioTeaser,
   feature: Feature,
   grid: Grid,
   teaser: Teaser,
+  contactform: Anfrageformular,
   page: Page,
-  Footer: LayoutFooter,
+  footer: LayoutFooter,
+  contactsection: ContactSection,
+  impressumtext: Impressum,
+  portfoliooverview: PortfolioOverview,
+  ctasection: CtaSection,
+  portraithero: PortraitHero,
+  portrait: Portrait,
 };
 
 storyblokInit({
